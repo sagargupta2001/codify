@@ -1,0 +1,31 @@
+button {
+    margin-top: 2rem !important;
+    width: 100%;
+}
+
+.email,
+.pass {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--background-color-primary);
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+    }
+    .Login form {
+        margin: 0 auto;
+    }
+}
