@@ -1,3 +1,5 @@
 */node_modules
 /frontend/Readme.md
 *.env*
+*/.idea
+frontend/.vscode
