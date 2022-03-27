@@ -45,6 +45,9 @@ defaultRouter.options('/', cors());
 const authRouter = require('./routes/auth');
 app.use('/api/auth', authRouter);
 
+const userRouter = require('./routes/user');
+app.use('/api/user', userRouter);
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/build/' + 'index.html'));
 });

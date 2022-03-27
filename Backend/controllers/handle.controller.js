@@ -1,5 +1,5 @@
 const Handle = require('../models/handle.model');
-const authenticateToken = require('../controllers/auth.controller').authenticateToken;
+const { fetchLeetcode } = require('../utils/leetcodescrapper');
 
 // Controllers 
 module.exports.addHandle = async(req, res) => {
@@ -23,4 +23,11 @@ module.exports.addHandle = async(req, res) => {
             "error": err
         })
     }
+}
+
+
+module.exports.fetchHandle = async(req, res) => {
+    const userName = req.body.username;
+    data = fetchLeetcode(userName);
+    res.status(200).json(data);
 }
